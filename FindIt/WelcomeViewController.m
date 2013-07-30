@@ -9,6 +9,7 @@
 #import "WelcomeViewController.h"
 #import <Parse/Parse.h>
 #import "LeftSideViewController.h"
+#import "MBProgressHUD.h"
 
 @interface WelcomeViewController ()
 
@@ -20,8 +21,24 @@
 #pragma LoginDelegate
 
 - (void) logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user {
-    NSLog(@"logged in");
-    [self dismissViewControllerAnimated:YES completion:nil];
+    FBRequest *request = [FBRequest requestForMe];
+    [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+        if (!error) {
+            NSDictionary *userdata = (NSDictionary *)result;
+            NSString *facebookID = userdata[@"id"];
+            NSString *name = userdata[@"name"];
+            NSURL *pictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", facebookID]];
+            [[PFUser currentUser] setObject:facebookID forKey:@"facebookID"];
+            [[PFUser currentUser] setObject:name forKey:@"displayName"];
+            [[PFUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                if (succeeded && !error) {
+                    [self dismissViewControllerAnimated:YES completion:nil];
+                    NSLog(@"logged in");
+
+                }
+            }];
+        }
+    }];
 }
 
 - (void) logInViewController:(PFLogInViewController *)logInController didFailToLogInWithError:(NSError *)error {
@@ -44,16 +61,22 @@
 
 #pragma Lifecycle
 
-- (void) awakeFromNib {
+- (void) initializeSidePanels {
     [self setLeftPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"leftViewController"]];
     [self setRightPanel:nil];
-    [self setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"Itinerary"]];
+    [self setCenterPanel:[self.storyboard instantiateViewControllerWithIdentifier:@"BrowseNav"]];
     [(LeftSideViewController *)self.leftPanel setMainController:self];
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self initializeLogin];
+    PFObject *obj = [PFObject objectWithClassName:@"Local"];
+    [obj setObject:[PFUser currentUser] forKey:@"user"];
+    [obj setObject:@"super long text i don't know what to tell you mon!" forKey:@"itinerary"];
+    [obj setObject:@"Philadelphia" forKey:@"city"];
+    [obj setObject:[NSNumber numberWithInt:25] forKey:@"rate"];
+    [obj save];
 }
 
 - (void) viewDidAppear:(BOOL)animated {
@@ -62,7 +85,8 @@
         [self presentViewController:login animated:NO completion:nil];
     }
     else {
-        NSLog(@"is user");
+        [self initializeSidePanels];
+
     }
 }
 

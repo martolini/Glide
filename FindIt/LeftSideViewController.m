@@ -21,7 +21,7 @@
 #pragma mark TableView
 
 - (int) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return self.tableArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -46,19 +46,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.tableArray = [NSMutableArray arrayWithObjects:@"Itinerary", @"Notifications", @"Profile", nil];
+    self.tableArray = [NSMutableArray arrayWithObjects:[[PFUser currentUser] objectForKey:@"displayName"], @"Browse locals", @"Search by city", @"Become a local", nil];
     viewControllers = [NSArray arrayWithObjects:
-                       [self.storyboard instantiateViewControllerWithIdentifier:@"Itinerary"],
-                       [self.storyboard instantiateViewControllerWithIdentifier:@"Notifications"],
-                       [self.storyboard instantiateViewControllerWithIdentifier:@"Profile"],
+                       [self.storyboard instantiateViewControllerWithIdentifier:@"ProfileNav"],
+                       [self.storyboard instantiateViewControllerWithIdentifier:@"BrowseNav"],
+                       [self.storyboard instantiateViewControllerWithIdentifier:@"Third"],
+                       [self.storyboard instantiateViewControllerWithIdentifier:@"Third"],
                        nil];
 
 }
 
 - (void) viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
-
 }
 
 - (void)didReceiveMemoryWarning

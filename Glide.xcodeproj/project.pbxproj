@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2FCF8C17A6D40900693884 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2FCF8B17A6D40900693884 /* MBProgressHUD.m */; };
+		0B2FCF8F17A6ECDA00693884 /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2FCF8E17A6ECDA00693884 /* BrowseViewController.m */; };
+		0B2FCF9817A72A2E00693884 /* jon_cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B2FCF9617A72A2E00693884 /* jon_cover.jpg */; };
+		0B2FCF9917A72A2E00693884 /* jon_profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0B2FCF9717A72A2E00693884 /* jon_profile.jpg */; };
+		0B2FCF9D17A732A400693884 /* ItineraryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2FCF9C17A732A400693884 /* ItineraryCell.m */; };
+		0B2FCF9F17A732CB00693884 /* ItineraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2FCF9E17A732CB00693884 /* ItineraryCell.xib */; };
 		0B5EF720179D797C00B8F70F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5EF71F179D797C00B8F70F /* UIKit.framework */; };
 		0B5EF722179D797C00B8F70F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5EF721179D797C00B8F70F /* Foundation.framework */; };
 		0B5EF724179D797C00B8F70F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5EF723179D797C00B8F70F /* CoreGraphics.framework */; };
@@ -34,13 +40,21 @@
 		0B5EF75F179D7C3D00B8F70F /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5EF75E179D7C3D00B8F70F /* AdSupport.framework */; };
 		0B5EF761179D7C4200B8F70F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5EF760179D7C4200B8F70F /* libsqlite3.dylib */; };
 		0B5EF763179D7C4A00B8F70F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5EF762179D7C4A00B8F70F /* Social.framework */; };
-		0B966D97179F0B0500B2A240 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B966D96179F0B0500B2A240 /* ProfileViewController.m */; };
 		0BE454A7179D8B5000CC245B /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE454A4179D8B5000CC245B /* JASidePanelController.m */; };
 		0BE454A8179D8B5000CC245B /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE454A6179D8B5000CC245B /* UIViewController+JASidePanel.m */; };
 		0BE454AB179D924800CC245B /* LeftSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE454AA179D924800CC245B /* LeftSideViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B2FCF8A17A6D40900693884 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		0B2FCF8B17A6D40900693884 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		0B2FCF8D17A6ECDA00693884 /* BrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseViewController.h; sourceTree = "<group>"; };
+		0B2FCF8E17A6ECDA00693884 /* BrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseViewController.m; sourceTree = "<group>"; };
+		0B2FCF9617A72A2E00693884 /* jon_cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jon_cover.jpg; sourceTree = "<group>"; };
+		0B2FCF9717A72A2E00693884 /* jon_profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jon_profile.jpg; sourceTree = "<group>"; };
+		0B2FCF9B17A732A400693884 /* ItineraryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItineraryCell.h; sourceTree = "<group>"; };
+		0B2FCF9C17A732A400693884 /* ItineraryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItineraryCell.m; sourceTree = "<group>"; };
+		0B2FCF9E17A732CB00693884 /* ItineraryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItineraryCell.xib; sourceTree = "<group>"; };
 		0B5EF71C179D797C00B8F70F /* Glide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B5EF71F179D797C00B8F70F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0B5EF721179D797C00B8F70F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,8 +87,6 @@
 		0B5EF75E179D7C3D00B8F70F /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		0B5EF760179D7C4200B8F70F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		0B5EF762179D7C4A00B8F70F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		0B966D95179F0B0500B2A240 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
-		0B966D96179F0B0500B2A240 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		0BE454A3179D8B5000CC245B /* JASidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASidePanelController.h; sourceTree = "<group>"; };
 		0BE454A4179D8B5000CC245B /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASidePanelController.m; sourceTree = "<group>"; };
 		0BE454A5179D8B5000CC245B /* UIViewController+JASidePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JASidePanel.h"; sourceTree = "<group>"; };
@@ -112,6 +124,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B2FCF9017A729BD00693884 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B2FCF9117A729C200693884 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0B2FCF9117A729C200693884 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0B2FCF9617A72A2E00693884 /* jon_cover.jpg */,
+				0B2FCF9717A72A2E00693884 /* jon_profile.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		0B2FCF9A17A7328F00693884 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B2FCF9B17A732A400693884 /* ItineraryCell.h */,
+				0B2FCF9E17A732CB00693884 /* ItineraryCell.xib */,
+				0B2FCF9C17A732A400693884 /* ItineraryCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		0B5EF713179D797C00B8F70F = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +197,8 @@
 		0B5EF725179D797C00B8F70F /* Glide */ = {
 			isa = PBXGroup;
 			children = (
+				0B2FCF9A17A7328F00693884 /* Views */,
+				0B2FCF9017A729BD00693884 /* Resources */,
 				0BE4549F179D89AD00CC245B /* Controllers */,
 				0BE45499179D898C00CC245B /* External */,
 				0B5EF72E179D797C00B8F70F /* AppDelegate.h */,
@@ -186,6 +227,8 @@
 		0BE45499179D898C00CC245B /* External */ = {
 			isa = PBXGroup;
 			children = (
+				0B2FCF8A17A6D40900693884 /* MBProgressHUD.h */,
+				0B2FCF8B17A6D40900693884 /* MBProgressHUD.m */,
 				0BE454A3179D8B5000CC245B /* JASidePanelController.h */,
 				0BE454A4179D8B5000CC245B /* JASidePanelController.m */,
 				0BE454A5179D8B5000CC245B /* UIViewController+JASidePanel.h */,
@@ -205,12 +248,12 @@
 		0BE4549F179D89AD00CC245B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0B966D95179F0B0500B2A240 /* ProfileViewController.h */,
-				0B966D96179F0B0500B2A240 /* ProfileViewController.m */,
 				0B5EF73A179D797C00B8F70F /* WelcomeViewController.h */,
 				0B5EF73B179D797C00B8F70F /* WelcomeViewController.m */,
 				0BE454A9179D924800CC245B /* LeftSideViewController.h */,
 				0BE454AA179D924800CC245B /* LeftSideViewController.m */,
+				0B2FCF8D17A6ECDA00693884 /* BrowseViewController.h */,
+				0B2FCF8E17A6ECDA00693884 /* BrowseViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -272,6 +315,9 @@
 				0B5EF736179D797C00B8F70F /* Default-568h@2x.png in Resources */,
 				0B5EF739179D797C00B8F70F /* MainStoryboard.storyboard in Resources */,
 				0B5EF75B179D7C2100B8F70F /* FacebookSDKResources.bundle in Resources */,
+				0B2FCF9817A72A2E00693884 /* jon_cover.jpg in Resources */,
+				0B2FCF9917A72A2E00693884 /* jon_profile.jpg in Resources */,
+				0B2FCF9F17A732CB00693884 /* ItineraryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +334,9 @@
 				0BE454A7179D8B5000CC245B /* JASidePanelController.m in Sources */,
 				0BE454A8179D8B5000CC245B /* UIViewController+JASidePanel.m in Sources */,
 				0BE454AB179D924800CC245B /* LeftSideViewController.m in Sources */,
-				0B966D97179F0B0500B2A240 /* ProfileViewController.m in Sources */,
+				0B2FCF8C17A6D40900693884 /* MBProgressHUD.m in Sources */,
+				0B2FCF8F17A6ECDA00693884 /* BrowseViewController.m in Sources */,
+				0B2FCF9D17A732A400693884 /* ItineraryCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
